@@ -2,6 +2,10 @@
 
 LexiLoop is a calm, recall-first vocabulary practice app that helps learners turn interesting words into words they can actually use.
 
+![LexiLoop dashboard showing daily vocabulary practice and progress](docs/dashboard-preview.svg)
+
+![LexiLoop active-recall practice question](docs/recall-preview.svg)
+
 ## Why it matters
 
 Looking up a word is easy; retaining it is the difficult part. LexiLoop combines a small daily path, contextual examples, pronunciation, and active recall to make practice feel focused rather than overwhelming.

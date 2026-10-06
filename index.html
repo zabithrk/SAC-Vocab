@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f1eb" />
+    <title>LexiLoop — Vocabulary, remembered</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <nav class="nav"><a class="brand" href="#"><span>l</span> LexiLoop</a><div class="nav-right"><button class="streak" aria-label="Current streak"><b>✦</b> 7 day streak</button><button class="avatar" aria-label="Your profile">AR</button></div></nav>
+
+      <header class="hero">
+        <div><p class="eyebrow">TUESDAY, OCTOBER 6</p><h1>Words worth<br><em>keeping.</em></h1><p class="intro">Build a vocabulary that sticks through short, thoughtful recall sessions.</p></div>
+        <section class="today-card"><div class="ring"><span>3</span><small>of 5</small></div><div><p class="eyebrow">TODAY'S FOCUS</p><h2>Making meaning<br>memorable</h2><button class="text-button" id="jumpPractice">Continue learning <span>→</span></button></div></section>
+      </header>
+
+      <section class="stats" aria-label="Learning statistics"><div><span class="stat-num">42</span><span>words learned</span></div><div><span class="stat-num">86<small>%</small></span><span>recall accuracy</span></div><div><span class="stat-num">7</span><span>day streak</span></div><div class="weekly"><span class="eyebrow">THIS WEEK</span><div class="bars" aria-label="Activity this week"><i class="active"></i><i class="active"></i><i class="active"></i><i></i><i class="soft"></i><i></i><i></i></div><span class="day-labels">M&nbsp;&nbsp; T&nbsp;&nbsp; W&nbsp;&nbsp; T&nbsp;&nbsp; F&nbsp;&nbsp; S&nbsp;&nbsp; S</span></div></section>
+
+      <section class="content-grid">
+        <div class="lesson-area"><div class="section-head"><div><p class="eyebrow">DAILY PATH</p><h2>Learn in context</h2></div><span class="progress-copy">3 / 5 complete</span></div>
+          <div class="path" id="lessonPath">
+            <button class="lesson done" data-word="lucid"><span class="lesson-no">01</span><span class="lesson-word">lucid</span><span class="lesson-type">adjective</span><span class="check">✓</span></button>
+            <button class="lesson done" data-word="sonder"><span class="lesson-no">02</span><span class="lesson-word">sonder</span><span class="lesson-type">noun</span><span class="check">✓</span></button>
+            <button class="lesson current" data-word="tenacious"><span class="lesson-no">03</span><span class="lesson-word">tenacious</span><span class="lesson-type">adjective</span><span class="go">→</span></button>
+            <button class="lesson" data-word="ephemeral"><span class="lesson-no">04</span><span class="lesson-word">ephemeral</span><span class="lesson-type">adjective</span><span class="lock">○</span></button>
+            <button class="lesson" data-word="equanimity"><span class="lesson-no">05</span><span class="lesson-word">equanimity</span><span class="lesson-type">noun</span><span class="lock">○</span></button>
+          </div>
+        </div>
+        <aside class="word-card" id="wordCard"><p class="eyebrow">WORD IN FOCUS</p><div class="word-heading"><h2 id="focusWord">tenacious</h2><button class="sound" id="soundButton" aria-label="Hear pronunciation">◖</button></div><p class="pronounce" id="pronounce">/təˈneɪʃəs/ · adjective</p><p class="definition" id="definition">Tending to keep a firm hold of something; persistent and determined.</p><div class="example"><span>“</span><p id="example">She was tenacious in her pursuit of a solution, even when the path felt uncertain.</p></div><div class="card-foot"><span id="wordStatus">Next up in your path</span><button id="markLearned">I know this <b>→</b></button></div></aside>
+      </section>
+
+      <section class="practice" id="practice"><div><p class="eyebrow">TWO-MINUTE RECALL</p><h2>Ready to make it yours?</h2><p>Active recall is how a new word becomes a familiar one.</p></div><button id="startPractice">Start a quick practice <span>→</span></button></section>
+    </main>
+    <dialog id="quiz"><button class="close" id="closeQuiz" aria-label="Close">×</button><p class="eyebrow">QUICK RECALL · 1 OF 3</p><h2>Which word means<br>“short-lived”?</h2><div class="answers"><button data-correct="false">equanimity</button><button data-correct="true">ephemeral</button><button data-correct="false">tenacious</button></div><p class="feedback" id="feedback"></p></dialog>
+    <script src="src/app.js"></script>
+  </body>
+</html>

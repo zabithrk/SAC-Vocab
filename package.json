@@ -1,0 +1,12 @@
+{
+  "name": "lexiloop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A focused vocabulary improvement app built around recall practice.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}
